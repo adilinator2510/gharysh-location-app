@@ -1,0 +1,123 @@
+20:44:48.939645 git.c:463               trace: built-in: git push origin main
+20:44:48.940387 run-command.c:659       trace: run_command: GIT_DIR=.git git remote-https origin https://github.com/adilinator2510/gharysh-location-app.git
+20:44:48.951174 git.c:749               trace: exec: git-remote-https origin https://github.com/adilinator2510/gharysh-location-app.git
+20:44:48.951458 run-command.c:659       trace: run_command: git-remote-https origin https://github.com/adilinator2510/gharysh-location-app.git
+20:44:48.972947 http.c:845              == Info: Couldn't find host github.com in the .netrc file; using defaults
+20:44:48.979302 http.c:845              == Info: Host github.com:443 was resolved.
+20:44:48.979326 http.c:845              == Info: IPv6: (none)
+20:44:48.979329 http.c:845              == Info: IPv4: 140.82.121.4
+20:44:48.979412 http.c:845              == Info:   Trying 140.82.121.4:443...
+20:44:49.060844 http.c:845              == Info: Connected to github.com (140.82.121.4) port 443
+20:44:49.132463 http.c:845              == Info: found 441 certificates in /etc/ssl/certs
+20:44:49.132567 http.c:845              == Info: GnuTLS ciphers: NORMAL:-ARCFOUR-128:-CTYPE-ALL:+CTYPE-X509:-VERS-SSL3.0
+20:44:49.132603 http.c:845              == Info: ALPN: curl offers h2,http/1.1
+20:44:49.220099 http.c:845              == Info: SSL connection using TLS1.3 / ECDHE_RSA_AES_128_GCM_SHA256
+20:44:49.224400 http.c:845              == Info:   server certificate verification OK
+20:44:49.224412 http.c:845              == Info:   server certificate status verification SKIPPED
+20:44:49.224516 http.c:845              == Info:   common name: github.com (matched)
+20:44:49.224523 http.c:845              == Info:   server certificate expiration date OK
+20:44:49.224526 http.c:845              == Info:   server certificate activation date OK
+20:44:49.224533 http.c:845              == Info:   certificate public key: EC/ECDSA
+20:44:49.224536 http.c:845              == Info:   certificate version: #3
+20:44:49.224548 http.c:845              == Info:   subject: CN=github.com
+20:44:49.224555 http.c:845              == Info:   start date: Wed, 05 Feb 2025 00:00:00 GMT
+20:44:49.224560 http.c:845              == Info:   expire date: Thu, 05 Feb 2026 23:59:59 GMT
+20:44:49.224588 http.c:845              == Info:   issuer: C=GB,ST=Greater Manchester,L=Salford,O=Sectigo Limited,CN=Sectigo ECC Domain Validation Secure Server CA
+20:44:49.224603 http.c:845              == Info: ALPN: server accepted h2
+20:44:49.225019 http.c:845              == Info: using HTTP/2
+20:44:49.225068 http.c:845              == Info: [HTTP/2] [1] OPENED stream for https://github.com/adilinator2510/gharysh-location-app.git/info/refs?service=git-receive-pack
+20:44:49.225073 http.c:845              == Info: [HTTP/2] [1] [:method: GET]
+20:44:49.225075 http.c:845              == Info: [HTTP/2] [1] [:scheme: https]
+20:44:49.225078 http.c:845              == Info: [HTTP/2] [1] [:authority: github.com]
+20:44:49.225080 http.c:845              == Info: [HTTP/2] [1] [:path: /adilinator2510/gharysh-location-app.git/info/refs?service=git-receive-pack]
+20:44:49.225083 http.c:845              == Info: [HTTP/2] [1] [user-agent: git/2.43.0]
+20:44:49.225086 http.c:845              == Info: [HTTP/2] [1] [accept: */*]
+20:44:49.225089 http.c:845              == Info: [HTTP/2] [1] [accept-encoding: deflate, gzip, br, zstd]
+20:44:49.225091 http.c:845              == Info: [HTTP/2] [1] [accept-language: en-US, en;q=0.9, *;q=0.8]
+20:44:49.225094 http.c:845              == Info: [HTTP/2] [1] [pragma: no-cache]
+20:44:49.225139 http.c:792              => Send header, 0000000248 bytes (0x000000f8)
+20:44:49.225146 http.c:804              => Send header: GET /adilinator2510/gharysh-location-app.git/info/refs?service=git-receive-pack HTTP/2
+20:44:49.225149 http.c:804              => Send header: Host: github.com
+20:44:49.225151 http.c:804              => Send header: User-Agent: git/2.43.0
+20:44:49.225153 http.c:804              => Send header: Accept: */*
+20:44:49.225155 http.c:804              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+20:44:49.225156 http.c:804              => Send header: Accept-Language: en-US, en;q=0.9, *;q=0.8
+20:44:49.225158 http.c:804              => Send header: Pragma: no-cache
+20:44:49.225160 http.c:804              => Send header:
+20:44:49.415890 http.c:792              <= Recv header, 0000000013 bytes (0x0000000d)
+20:44:49.415908 http.c:804              <= Recv header: HTTP/2 401
+20:44:49.415916 http.c:792              <= Recv header, 0000000026 bytes (0x0000001a)
+20:44:49.415921 http.c:804              <= Recv header: server: GitHub-Babel/3.0
+20:44:49.415929 http.c:792              <= Recv header, 0000000054 bytes (0x00000036)
+20:44:49.415933 http.c:804              <= Recv header: content-security-policy: default-src 'none'; sandbox
+20:44:49.415938 http.c:792              <= Recv header, 0000000041 bytes (0x00000029)
+20:44:49.415942 http.c:804              <= Recv header: content-type: text/plain; charset=UTF-8
+20:44:49.415948 http.c:792              <= Recv header, 0000000040 bytes (0x00000028)
+20:44:49.415952 http.c:804              <= Recv header: www-authenticate: Basic realm="GitHub"
+20:44:49.415960 http.c:792              <= Recv header, 0000000020 bytes (0x00000014)
+20:44:49.415965 http.c:804              <= Recv header: content-length: 26
+20:44:49.415971 http.c:792              <= Recv header, 0000000037 bytes (0x00000025)
+20:44:49.415975 http.c:804              <= Recv header: date: Thu, 24 Apr 2025 15:44:49 GMT
+20:44:49.415981 http.c:792              <= Recv header, 0000000023 bytes (0x00000017)
+20:44:49.415985 http.c:804              <= Recv header: x-frame-options: DENY
+20:44:49.415991 http.c:792              <= Recv header, 0000000073 bytes (0x00000049)
+20:44:49.415996 http.c:804              <= Recv header: strict-transport-security: max-age=31536000; includeSubDomains; preload
+20:44:49.416002 http.c:792              <= Recv header, 0000000058 bytes (0x0000003a)
+20:44:49.416007 http.c:804              <= Recv header: x-github-request-id: A3EA:4FE3A:2378DB0:242E208:680A5C71
+20:44:49.416013 http.c:792              <= Recv header, 0000000002 bytes (0x00000002)
+20:44:49.416018 http.c:804              <= Recv header:
+20:44:49.416037 http.c:845              == Info: Connection #0 to host github.com left intact
+20:44:49.416108 run-command.c:659       trace: run_command: /snap/code/191/usr/share/code/resources/app/extensions/git/dist/askpass.sh 'Username for '\''https://github.com'\'': '
+20:44:49.659632 run-command.c:659       trace: run_command: /snap/code/191/usr/share/code/resources/app/extensions/git/dist/askpass.sh 'Password for '\''https://206085473@github.com'\'': '
+20:44:49.884289 http.c:845              == Info: Found bundle for host: 0x59ad79e0e2f0 [can multiplex]
+20:44:49.884317 http.c:845              == Info: Re-using existing connection with host github.com
+20:44:49.884333 http.c:845              == Info: Server auth using Basic with user '206085473'
+20:44:49.884398 http.c:845              == Info: [HTTP/2] [3] OPENED stream for https://github.com/adilinator2510/gharysh-location-app.git/info/refs?service=git-receive-pack
+20:44:49.884403 http.c:845              == Info: [HTTP/2] [3] [:method: GET]
+20:44:49.884406 http.c:845              == Info: [HTTP/2] [3] [:scheme: https]
+20:44:49.884409 http.c:845              == Info: [HTTP/2] [3] [:authority: github.com]
+20:44:49.884414 http.c:845              == Info: [HTTP/2] [3] [:path: /adilinator2510/gharysh-location-app.git/info/refs?service=git-receive-pack]
+20:44:49.884422 http.c:845              == Info: [HTTP/2] [3] [authorization: Basic <redacted>]
+20:44:49.884425 http.c:845              == Info: [HTTP/2] [3] [user-agent: git/2.43.0]
+20:44:49.884427 http.c:845              == Info: [HTTP/2] [3] [accept: */*]
+20:44:49.884432 http.c:845              == Info: [HTTP/2] [3] [accept-encoding: deflate, gzip, br, zstd]
+20:44:49.884435 http.c:845              == Info: [HTTP/2] [3] [accept-language: en-US, en;q=0.9, *;q=0.8]
+20:44:49.884438 http.c:845              == Info: [HTTP/2] [3] [pragma: no-cache]
+20:44:49.884584 http.c:792              => Send header, 0000000339 bytes (0x00000153)
+20:44:49.884599 http.c:804              => Send header: GET /adilinator2510/gharysh-location-app.git/info/refs?service=git-receive-pack HTTP/2
+20:44:49.884604 http.c:804              => Send header: Host: github.com
+20:44:49.884606 http.c:804              => Send header: Authorization: Basic <redacted>
+20:44:49.884608 http.c:804              => Send header: User-Agent: git/2.43.0
+20:44:49.884610 http.c:804              => Send header: Accept: */*
+20:44:49.884612 http.c:804              => Send header: Accept-Encoding: deflate, gzip, br, zstd
+20:44:49.884615 http.c:804              => Send header: Accept-Language: en-US, en;q=0.9, *;q=0.8
+20:44:49.884617 http.c:804              => Send header: Pragma: no-cache
+20:44:49.884619 http.c:804              => Send header:
+20:44:53.532909 http.c:792              <= Recv header, 0000000013 bytes (0x0000000d)
+20:44:53.532921 http.c:804              <= Recv header: HTTP/2 200
+20:44:53.532931 http.c:792              <= Recv header, 0000000026 bytes (0x0000001a)
+20:44:53.532936 http.c:804              <= Recv header: server: GitHub-Babel/3.0
+20:44:53.532941 http.c:792              <= Recv header, 0000000060 bytes (0x0000003c)
+20:44:53.532944 http.c:804              <= Recv header: content-type: application/x-git-receive-pack-advertisement
+20:44:53.532947 http.c:792              <= Recv header, 0000000054 bytes (0x00000036)
+20:44:53.532950 http.c:804              <= Recv header: content-security-policy: default-src 'none'; sandbox
+20:44:53.532955 http.c:792              <= Recv header, 0000000040 bytes (0x00000028)
+20:44:53.532959 http.c:804              <= Recv header: expires: Fri, 01 Jan 1980 00:00:00 GMT
+20:44:53.532964 http.c:792              <= Recv header, 0000000018 bytes (0x00000012)
+20:44:53.532966 http.c:804              <= Recv header: pragma: no-cache
+20:44:53.532973 http.c:792              <= Recv header, 0000000053 bytes (0x00000035)
+20:44:53.532975 http.c:804              <= Recv header: cache-control: no-cache, max-age=0, must-revalidate
+20:44:53.532979 http.c:792              <= Recv header, 0000000023 bytes (0x00000017)
+20:44:53.532982 http.c:804              <= Recv header: vary: Accept-Encoding
+20:44:53.532986 http.c:792              <= Recv header, 0000000037 bytes (0x00000025)
+20:44:53.532990 http.c:804              <= Recv header: date: Thu, 24 Apr 2025 15:44:53 GMT
+20:44:53.532994 http.c:792              <= Recv header, 0000000023 bytes (0x00000017)
+20:44:53.532996 http.c:804              <= Recv header: x-frame-options: DENY
+20:44:53.532999 http.c:792              <= Recv header, 0000000073 bytes (0x00000049)
+20:44:53.533001 http.c:804              <= Recv header: strict-transport-security: max-age=31536000; includeSubDomains; preload
+20:44:53.533004 http.c:792              <= Recv header, 0000000058 bytes (0x0000003a)
+20:44:53.533007 http.c:804              <= Recv header: x-github-request-id: A3EA:4FE3A:2379115:242E5A4:680A5C71
+20:44:53.533010 http.c:792              <= Recv header, 0000000002 bytes (0x00000002)
+20:44:53.533012 http.c:804              <= Recv header:
+20:44:53.533032 http.c:845              == Info: Connection #0 to host github.com left intact
+Everything up-to-date
